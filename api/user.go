@@ -17,6 +17,7 @@ func (ua *UserApi) Login(ctx *gin.Context) {
 	// 数据库查询
 
 	// 返回token
+	ctx.JSON(200, gin.H{"message": "success"})
 }
 
 func (ua *UserApi) GetInfo(ctx *gin.Context) {
