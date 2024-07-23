@@ -21,5 +21,7 @@ func (ua *UserApi) Login(ctx *gin.Context) {
 }
 
 func (ua *UserApi) GetInfo(ctx *gin.Context) {
+	// 获取用户&&角色信息
 
+	// 获取侧边栏菜单信息
 }

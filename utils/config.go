@@ -1,16 +1,17 @@
 package utils
 
 import (
-	"log"
 	"os"
 
 	"github.com/joho/godotenv"
 )
 
-func LoadConfig() {
+// 初始化配置
+func init() {
+	print("init config")
 	err := godotenv.Load(".env")
 	if err != nil {
-		log.Fatalf("Error loading .env file: %v", err)
+		panic(err)
 	}
 }
 

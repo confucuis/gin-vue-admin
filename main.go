@@ -6,10 +6,6 @@ import (
 )
 
 func main() {
-	// 加载配置
-	utils.LoadConfig()
-	// 连接数据库
-	utils.InitDb()
 
 	route := api.NewRoute()
 
