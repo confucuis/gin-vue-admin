@@ -12,15 +12,15 @@ type UserApi struct {
 	LoginForm form.LoginForm
 }
 
-func (ua *UserApi) Login(ctx *gin.Context) {
-	ctx.Bind(&ua.LoginForm)
+func (userApi *UserApi) Login(ctx *gin.Context) {
+	ctx.Bind(&userApi.LoginForm)
 	// 数据库查询
 
 	// 返回token
 	ctx.JSON(200, gin.H{"message": "success"})
 }
 
-func (ua *UserApi) GetInfo(ctx *gin.Context) {
+func (userApi *UserApi) GetInfo(ctx *gin.Context) {
 	// 获取用户&&角色信息
 
 	// 获取侧边栏菜单信息

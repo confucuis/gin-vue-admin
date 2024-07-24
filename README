@@ -2,3 +2,4 @@
 
 [环境变量]
     *) export GIN_MODE=release | debug
+
